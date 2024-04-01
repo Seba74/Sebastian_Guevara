@@ -1,0 +1,186 @@
+{
+  "basics": {
+    "name": "Sebastian Guevara",
+    "label": "Full Stack Developer with over 3 years of experience",
+    "image": "/me.webp",
+    "email": "jseb.guevara@gmail.com",
+    "phone": "Not Found",
+    "url": "Not Found",
+    "summary": "+3 years of experience. Programmer analyst and Full Stack Web Developer. I'm based in Corrientes, Argentina. Have consistently made positive contributions across differents environments throughout my career.",
+    "location": {
+      "address": "Not Found",
+      "postalCode": "Not Found",
+      "city": "Corrientes",
+      "countryCode": "ARG",
+      "region": "Argentina"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "sebguevara",
+        "url": "https://www.linkedin.com/in/sebastian-guevara-1535b7183/"
+      },
+      {
+        "network": "X",
+        "username": "_SebGuevara",
+        "url": "https://x.com/_SebGuevara"
+      },
+      {
+        "network": "GitHub",
+        "username": "Seba74",
+        "url": "https://github.com/Seba74"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Savant BPO",
+      "position": "Back End Developer",
+      "startDate": "April 2023",
+      "endDate": "Present",
+      "summary": "I spearheaded the development of streamlined endpoints, fortified system security measures, fine-tuned request management. My responsibilities encompassed guaranteeing uninterrupted data flow, optimizing system performance, and proactively mitigating potential security risks."
+    },
+    {
+      "company": "Dayflow",
+      "position": "Web Developer",
+      "startDate": "May 2022",
+      "endDate": "April 2023",
+      "summary": "I integrated APIs and services into Angular web applications, optimizing their performance to achieve faster loading times and a seamless user experience. Additionally, I worked on the backend with Express."
+    },
+    {
+      "company": "Ajolis",
+      "position": "Front End Developer",
+      "startDate": "April 2021",
+      "endDate": "August 2022",
+      "summary": "I implemented responsive and visually attractive interfaces, optimizing user interactions by collaborating closely with UX/UI designers. I also developed and maintained different websites, ensuring their functionality and performance."
+    }
+  ],
+  "education": [
+    {
+      "institution": "National University of the Northeast",
+      "url": "https://www.unne.edu.ar/",
+      "area": "Information Systems",
+      "studyType": "Degree",
+      "startDate": "January 2021",
+      "endDate": null,
+      "score": null
+    },
+    {
+      "institution": "National University of the Northeast",
+      "url": "https://www.unne.edu.ar/",
+      "area": "Programmer Analyst",
+      "studyType": "Associate Degree",
+      "startDate": "January 2021",
+      "endDate": "November 2023",
+      "score": "8.6"
+    },
+    {
+      "institution": "Colombo American English",
+      "url": "https://www.colomboamericano.edu.co/",
+      "area": "English B2",
+      "studyType": "Course",
+      "startDate": "July 2018",
+      "endDate": "March 2019",
+      "score": null
+    }
+  ],
+  "skills": [
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": ["Frontend", "TypeScript", "Sass", "Tailwind", "RxJS"]
+    },
+    {
+      "name": "NodeJs",
+      "level": "Avanzado",
+      "keywords": ["Backend", "Express", "Socket.io", "REST API", "GraphQL"]
+    },
+    {
+      "name": ".Net",
+      "level": "Avanzado",
+      "keywords": ["Backend", "C#", "ASP.NET", "MVC", "Web API"]
+    },
+    {
+      "name": "SQL Databases",
+      "level": "Avanzado",
+      "keywords": ["MySQL", "PostgreSQL", "SQL Server"]
+    },
+    {
+      "name": "NoSQL Databases",
+      "level": "Intermedio",
+      "keywords": ["MongoDB", "Firebase"]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Version Control", "GitHub", "GitLab"]
+    },
+    {
+      "name": "Docker",
+      "level": "Intermedio",
+      "keywords": ["Containers", "Compose", "Swarm"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluency": "Native speaker"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Machine Learning",
+      "keywords": ["TensorFlow", "Keras", "Scikit-learn"]
+    },
+    {
+      "name": "DevOps",
+      "keywords": ["CI/CD", "CircleCI"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Mailo",
+      "isActive": true,
+      "image": "tasky.webp",
+      "description": "Mailo is an innovative automated assistant available on WhatsApp, designed to connect users with nearby drivers. Its aim is to provide a fast and secure transportation service.",
+      "highlights": ["AutomatedAssistant", "WhatsApp", "Drivers", "Fast", "Secure"],
+      "technologies": ["Angular", "Express", "SocketIO", "MongoDB", "OpenAI", "Maps", "Meta"],
+      "url": "https://tolimailo.web.app",
+      "github": null
+    },
+    {
+      "name": "Tasky App",
+      "isActive": true,
+      "image": "tasky.webp",
+      "description": "Tasky is a task management application that allows users to create, assign, and track tasks. It is designed to streamline task management processes and improve team collaboration.",
+      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
+      "highlights": ["TaskManagement", "Application", "Track", "Streamline", "TeamCollaboration"],
+      "url": "https://taskyapp.web.app",
+      "github": "https://github.com/Seba74/task-app"
+    },
+    {
+      "name": "Photo View",
+      "isActive": false,
+      "image": "tasky.webp",
+      "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
+      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
+      "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
+      "url": null,
+      "github": "https://github.com/Seba74/photoview-frontend"
+    },
+    {
+      "name": "Photo View",
+      "isActive": false,
+      "image": "tasky.webp",
+      "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
+      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
+      "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
+      "url": null,
+      "github": "https://github.com/Seba74/photoview-frontend"
+    }
+  ]
+}

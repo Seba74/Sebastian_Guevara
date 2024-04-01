@@ -1,0 +1,78 @@
+---
+import NoiseBackground from "@/components/NoiseBackground.astro";
+import LightsBackground from "@/components/LightsBackground.astro";
+import SideNav from "@/components/SideNav.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/sections/Footer.astro";
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="{description}" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-tertiary-900 text-white xl:px-20 w-full h-full lg:flex">
+    <NoiseBackground />
+    <LightsBackground />
+    <Header />
+    <slot />
+    <SideNav />
+  </body>
+</html>
+<style is:global>
+  html {
+    font-family: "Montserrat", sans-serif;
+    scrollbar-gutter: stable;
+    scroll-behavior: smooth;
+  }
+
+  @supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      background-color: theme(colors.primary.50);
+      border: 2px solid transparent;
+      background-clip: content-box;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background-color: theme(colors.primary.500);
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--background-image);
+    }
+
+    ::-webkit-scrollbar-corner {
+      background: var(--background-image);
+    }
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-color: theme(colors.primary.50) transparent;
+      scrollbar-width: thin;
+    }
+  }
+</style>

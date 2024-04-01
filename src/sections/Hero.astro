@@ -1,0 +1,24 @@
+---
+import { basics } from "@cv";
+
+const { name, summary } = basics;
+---
+
+<div class="h-screen w-full flex items-center justify-center">
+  <div
+    class="home-page w-full flex items-center justify-center sm:p-0 relative"
+  >
+    <div class="flex flex-col gap-y-6 text-center pb-20">
+      <h1
+        class="text-5xl sm:text-7xl drop-shadow-[0_1.2px_1.2px_rgba(2,2,2,0.8)] text-primary-100 font-bold tracking-wide"
+      >
+        {name.toUpperCase()}
+      </h1>
+      <h2 class="sm:text-lg sm:text-center sm:px-20 font-light text-primary-50">
+        {summary}
+      </h2>
+    </div>
+  </div>
+</div>
+
+<style></style>

@@ -1,0 +1,16 @@
+---
+import FooterContent from "@/components/FooterContent.astro";
+import SocialButtons from "@/components/SocialButtons.astro";
+---
+
+<footer
+  class="relative flex w-full flex-col place-items-center pb-10 pt-6 md:flex-row justify-center md:pt-16"
+>
+  <hr
+    class="absolute top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-secondary-100 to-transparent bg-center md:my-9"
+  />
+  <div class="flex flex-col gap-y-6 items-center justify-center">
+    <FooterContent />
+    <SocialButtons />
+  </div>
+</footer>

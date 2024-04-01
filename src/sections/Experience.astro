@@ -1,0 +1,18 @@
+---
+import ExperienceItem from "@/components/ExperienceItem.astro";
+import { work } from "@cv";
+
+const EXPERIENCIE = work;
+const title = "Laboral Experience";
+---
+
+<h3 class="text-4xl font-bold text-primary-100 pb-6">{title.toUpperCase()}</h3>
+<ol class="relative mt-16 pb-20 sm:pb-0">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li>
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol>

@@ -1,0 +1,13 @@
+---
+const { error, message, contextMessage } = Astro.props;
+---
+
+<section
+  class="m-auto flex w-full h-screen items-center justify-center text-primary"
+>
+  <div class="mb-12 flex flex-col gap-y-8 text-center">
+    <h1 class="sm:text-[7rem] text-4xl font-bold flex self-center">{error}</h1>
+    <p class="sm:text-2xl text-lg">{message}</p>
+    <p class="sm:text-xl text-sm">{contextMessage}</p>
+  </div>
+</section>
