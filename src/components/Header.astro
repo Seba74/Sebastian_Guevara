@@ -21,7 +21,9 @@ const pages = nav;
       id={MOBILE_MENU_CONTENT_ID}
     >
       <aside class="flex min-h-16 w-full items-center justify-between relative">
-        <span class="text-xl font-semibold uppercase text-primary-100">Menú</span>
+        <span class="text-xl font-semibold uppercase text-primary-100"
+          >Menú</span
+        >
         <HamburgerButton id="innerMenuButton" />
       </aside>
       <div class="flex pb-1 min-h-2 w-full items-center">
@@ -52,7 +54,7 @@ const pages = nav;
             ))
           }
         </div>
-        <div class="absolute bottom-0 ">
+        <div class="absolute bottom-0">
           <Footer />
         </div>
       </nav>
@@ -128,18 +130,6 @@ const pages = nav;
     height: 8px;
   }
 
-  .current-page-mob:before {
-    background: theme(colors.primary.500);
-    width: 10px;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    height: 10px;
-    border-radius: 100%;
-    transform: translateY(-50%);
-  }
-
   .gridBottomBarContainer {
     grid-template-columns: 1fr 6rem 1fr;
     grid-template-rows: 4px;
@@ -211,9 +201,7 @@ const pages = nav;
 
   navLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      setTimeout(() => {
-        innerMenuButton?.click();
-      }, 620);
+      innerMenuButton?.click();
 
       navLinks.forEach((link) => {
         link.classList.remove("text-primary-100");
