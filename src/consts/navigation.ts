@@ -30,3 +30,25 @@ export const nav = [
       icon: "About",
     },
   ];
+
+
+  export const social = [
+    {
+      title: "Github",
+      label: "github",
+      url: "https://github.com/Seba74",
+      icon: "Github",
+    },
+    {
+      title: "LinkedIn",
+      label: "linkedin",
+      url: "https://www.linkedin.com/in/sebastian-guevara-1535b7183/",
+      icon: "Linkedin",
+    },
+    {
+      title: "Email",
+      label: "email",
+      url: "mailto:jseb.guevara@gmail.com",
+      icon: "Email",
+    }
+  ]

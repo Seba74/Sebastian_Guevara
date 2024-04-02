@@ -11,7 +11,13 @@ import Maps from "@/components/icons/brands/Maps.astro";
 import Meta from "@/components/icons/brands/Meta.astro";
 import Link from "@/components/icons/Link.astro";
 import LinkButton from "@/components/LinkButton.astro";
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
 import { projects } from "@cv";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/projects/*.{webp,png}"
+);
 
 const Icons: Record<string, any> = {
   Tailwind,
@@ -24,79 +30,78 @@ const Icons: Record<string, any> = {
   OpenAI,
   Maps,
   Meta,
-  Link
+  Link,
 };
 
 const PROJECTS = projects;
 const title = "Projects";
 ---
 
-<h3 class="text-4xl font-bold text-primary-100 pb-20"> {title.toUpperCase()} </h3>
+<h3 class="text-4xl font-bold text-primary-100 pb-20">{title.toUpperCase()}</h3>
 <div class="flex flex-col gap-y-16 mb-40">
   {
     PROJECTS.map(
-      ({ image, name, description, highlights, isActive, url, github, technologies }) => (
-        <article class="flex flex-col xl:flex-row xl:gap-x-12">
-          <div class="w-fit max-w-[26rem]">
-            <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
-              <img
-                alt="Recién llegado vs 5 años en Nueva Zelanda"
-                class="object-cover w-full h-full transition duration-500 hover:scale-105 rounded-xl"
-                loading="lazy"
-                src={"./img/projects/" + image}
-              />
+      ({ image, name, description, highlights, url, github, technologies }) => {
+        return (
+          <article class="flex flex-col xl:flex-row xl:gap-x-12">
+            <div class="w-fit max-w-[26rem]">
+              <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
+                <Image
+                  alt={name}
+                  class="object-cover w-full h-full transition duration-500 hover:scale-105 rounded-xl"
+                  src={images[image]()}
+                />
+              </div>
             </div>
-          </div>
 
-          <div class="w-full md:max-w-xl relative pt-6 xl:pt-0">
-            <h3 class="text-2xl font-bold text-gray-800 dark:text-primary-300">
-              {name}
-            </h3>
-            <ul class="flex flex-wrap mt-2">
-              {technologies.map((tech) => {
-                const Icon = Icons[tech];
-                return (
-                  <li class="flex items-center justify-center text-secondary-100">
-                    <span
-                      class={`flex gap-x-2 rounded-full text-xs py-1 px-2 items-center`}
-                    >
-                      <Icon class="size-4" />
-                    </span>
-                  </li>
-                );
-              })}
-            </ul>
-            <div class="flex flex-wrap mt-2">
-              <div class="mt-2">
-                {description}
+            <div class="w-full md:max-w-xl relative pt-6 xl:pt-0">
+              <h3 class="text-2xl font-bold text-gray-800 dark:text-primary-300">
+                {name}
+              </h3>
+              <ul class="flex flex-wrap mt-2">
+                {technologies.map((tech) => {
+                  const Icon = Icons[tech];
+                  return (
+                    <li class="flex items-center justify-center text-secondary-100">
+                      <span
+                        class={`flex gap-x-2 rounded-full text-xs py-1 px-2 items-center`}
+                      >
+                        <Icon class="size-4" />
+                      </span>
+                    </li>
+                  );
+                })}
+              </ul>
+              <div class="flex flex-wrap mt-2">
+                <div class="mt-2">{description}</div>
+                <div class="flex-wrap mt-2 hidden lg:flex">
+                  {highlights.map((tag) => (
+                    <div class="mr-2 mb-2 bg-secondary-700 text-secondary-100 rounded-full">
+                      <span class="flex gap-x-2 rounded-full text-xs py-1 px-2">
+                        {"#" + tag}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+                <footer class="flex items-end justify-start mt-4 gap-x-4 xl:absolute bottom-0">
+                  {github && (
+                    <LinkButton href={github}>
+                      <Github class="size-6" />
+                      Code
+                    </LinkButton>
+                  )}
+                  {url && (
+                    <LinkButton href={url}>
+                      <Link class="size-4" />
+                      Preview
+                    </LinkButton>
+                  )}
+                </footer>
               </div>
-              <div class="flex-wrap mt-2 hidden lg:flex">
-                {highlights.map((tag) => (
-                  <div class="mr-2 mb-2 bg-secondary-700 text-secondary-100 rounded-full">
-                    <span class="flex gap-x-2 rounded-full text-xs py-1 px-2">
-                      {"#" + tag}
-                    </span>
-                  </div>
-                ))}
-              </div>
-              <footer class="flex items-end justify-start mt-4 gap-x-4 xl:absolute bottom-0">
-                {github && (
-                  <LinkButton href={github}>
-                    <Github class="size-6" />
-                    Code
-                  </LinkButton>
-                )}
-                {url && (
-                  <LinkButton href={url}>
-                    <Link class="size-4" />
-                    Preview
-                  </LinkButton>
-                )}
-              </footer>
             </div>
-          </div>
-        </article>
-      )
+          </article>
+        );
+      }
     )
   }
 </div>

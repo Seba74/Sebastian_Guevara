@@ -1,31 +1,36 @@
 ---
+import { Image } from "astro:assets";
+import type { ImageMetadata } from "astro";
+import { basics } from '@cv';
+
 interface Props {}
 
 const {} = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "/src/assets/profile/*.{webp,png,svg}"
+);
 ---
 
 <section>
-  <div
-    class="w-full flex flex-col lg:flex-row items-center sm:gap-x-20 mb-8"
-  >
+  <div class="w-full flex flex-col lg:flex-row items-center sm:gap-x-20 mb-8">
     <div class="info-container flex flex-col gap-y-8">
-      <h1 class="font-bold text-4xl text-primary-100">
-        ABOUT ME
-      </h1>
+      <h1 class="font-bold text-4xl text-primary-100">ABOUT ME</h1>
       <p class="text-lg">
         Advanced Computer Science student and full-stack Angular developer with
         over 3 years of experience. Currently focused on developing
         cross-platform applications and Machine Learning.
       </p>
     </div>
-    
+
     <div class="img-container relative lg:min-w-[24rem]">
       <div class="image">
-        <img src="./img/profile/me.png" alt="" />
+        <Image
+          src={images[basics.image]()}
+          alt="Sebastian Guevara"
+        />
       </div>
     </div>
   </div>
 </section>
 
-<style>
-</style>
+<style></style>

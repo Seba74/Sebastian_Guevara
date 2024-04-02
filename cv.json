@@ -2,7 +2,7 @@
   "basics": {
     "name": "Sebastian Guevara",
     "label": "Full Stack Developer with over 3 years of experience",
-    "image": "/me.webp",
+    "image": "/src/assets/profile/me.png",
     "email": "jseb.guevara@gmail.com",
     "phone": "Not Found",
     "url": "Not Found",
@@ -145,9 +145,9 @@
     {
       "name": "Mailo",
       "isActive": true,
-      "image": "tasky.webp",
+      "image": "/src/assets/projects/tasky.webp",
       "description": "Mailo is an innovative automated assistant available on WhatsApp, designed to connect users with nearby drivers. Its aim is to provide a fast and secure transportation service.",
-      "highlights": ["AutomatedAssistant", "WhatsApp", "Drivers", "Fast", "Secure"],
+      "highlights": ["AutomatedAssistant", "WhatsApp", "Drivers", "Fast", "Secure", "Comfortable"],
       "technologies": ["Angular", "Express", "SocketIO", "MongoDB", "OpenAI", "Maps", "Meta"],
       "url": "https://tolimailo.web.app",
       "github": null
@@ -155,7 +155,7 @@
     {
       "name": "Tasky App",
       "isActive": true,
-      "image": "tasky.webp",
+      "image": "/src/assets/projects/tasky.webp",
       "description": "Tasky is a task management application that allows users to create, assign, and track tasks. It is designed to streamline task management processes and improve team collaboration.",
       "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
       "highlights": ["TaskManagement", "Application", "Track", "Streamline", "TeamCollaboration"],
@@ -165,7 +165,7 @@
     {
       "name": "Photo View",
       "isActive": false,
-      "image": "tasky.webp",
+      "image": "/src/assets/projects/tasky.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
       "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
       "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
@@ -175,7 +175,7 @@
     {
       "name": "Photo View",
       "isActive": false,
-      "image": "tasky.webp",
+      "image": "/src/assets/projects/tasky.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
       "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
       "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
