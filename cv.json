@@ -6,7 +6,7 @@
     "email": "jseb.guevara@gmail.com",
     "phone": "Not Found",
     "url": "Not Found",
-    "summary": "+3 years of experience. Programmer analyst and Full Stack Web Developer. I'm based in Corrientes, Argentina. Have consistently made positive contributions across differents environments throughout my career.",
+    "summary": "Nearly 2 years of experience. Programmer analyst and Full Stack Web Developer. I'm based in Corrientes, Argentina. Have consistently made positive contributions across differents environments throughout my career.",
     "location": {
       "address": "Not Found",
       "postalCode": "Not Found",
@@ -34,25 +34,24 @@
   },
   "work": [
     {
-      "company": "Savant BPO",
+      "company": "Dinatech",
       "position": "Back End Developer",
-      "startDate": "April 2023",
-      "endDate": "Present",
-      "summary": "I spearheaded the development of streamlined endpoints, fortified system security measures, fine-tuned request management. My responsibilities encompassed guaranteeing uninterrupted data flow, optimizing system performance, and proactively mitigating potential security risks."
-    },
-    {
-      "company": "Dayflow",
-      "position": "Web Developer",
-      "startDate": "May 2022",
-      "endDate": "April 2023",
-      "summary": "I integrated APIs and services into Angular web applications, optimizing their performance to achieve faster loading times and a seamless user experience. Additionally, I worked on the backend with Express."
-    },
-    {
-      "company": "Ajolis",
-      "position": "Front End Developer",
-      "startDate": "April 2021",
-      "endDate": "August 2022",
-      "summary": "I implemented responsive and visually attractive interfaces, optimizing user interactions by collaborating closely with UX/UI designers. I also developed and maintained different websites, ensuring their functionality and performance."
+      "startDate": "October 2022",
+      "endDate": "January 2024",
+      "data": [
+        {
+          "company": "Ground Engineering",
+          "summary": "My main objective in this project was to optimize resources. I focused on enhancing existing processes and developing technical solutions to ensure quicker and more effective access to the required information."
+        },
+        {
+          "company": "DayFlow",
+          "summary": "From the initial phase of the project, I actively participated in the analysis and design of the system's various functionalities. My work focused on building the system from the ground up, where I contributed to both the conception of key features and their implementation."
+        },
+        {
+          "company": "Logistica EB",
+          "summary": "My role involved adding new functionalities to the system, and I focused on improving its efficiency and performance through detailed analysis and code refactoring."
+        }
+      ]
     }
   ],
   "education": [
@@ -147,8 +146,23 @@
       "isActive": true,
       "image": "/src/assets/projects/tasky.webp",
       "description": "Mailo is an innovative automated assistant available on WhatsApp, designed to connect users with nearby drivers. Its aim is to provide a fast and secure transportation service.",
-      "highlights": ["AutomatedAssistant", "WhatsApp", "Drivers", "Fast", "Secure", "Comfortable"],
-      "technologies": ["Angular", "Express", "SocketIO", "MongoDB", "OpenAI", "Maps", "Meta"],
+      "highlights": [
+        "AutomatedAssistant",
+        "WhatsApp",
+        "Drivers",
+        "Fast",
+        "Secure",
+        "Comfortable"
+      ],
+      "technologies": [
+        "Angular",
+        "Express",
+        "SocketIO",
+        "MongoDB",
+        "OpenAI",
+        "Maps",
+        "Meta"
+      ],
       "url": "https://tolimailo.web.app",
       "github": null
     },
@@ -157,8 +171,21 @@
       "isActive": true,
       "image": "/src/assets/projects/tasky.webp",
       "description": "Tasky is a task management application that allows users to create, assign, and track tasks. It is designed to streamline task management processes and improve team collaboration.",
-      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
-      "highlights": ["TaskManagement", "Application", "Track", "Streamline", "TeamCollaboration"],
+      "technologies": [
+        "Angular",
+        "Ionic",
+        "Express",
+        "MongoDB",
+        "Tailwind",
+        "SocketIO"
+      ],
+      "highlights": [
+        "TaskManagement",
+        "Application",
+        "Track",
+        "Streamline",
+        "TeamCollaboration"
+      ],
       "url": "https://taskyapp.web.app",
       "github": "https://github.com/Seba74/task-app"
     },
@@ -167,8 +194,22 @@
       "isActive": false,
       "image": "/src/assets/projects/tasky.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
-      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
-      "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
+      "technologies": [
+        "Angular",
+        "Ionic",
+        "Express",
+        "MongoDB",
+        "Tailwind",
+        "SocketIO"
+      ],
+      "highlights": [
+        "SocialMedia",
+        "SharePhotos",
+        "Videos",
+        "Followers",
+        "UserExperience",
+        "UserEngagement"
+      ],
       "url": null,
       "github": "https://github.com/Seba74/photoview-frontend"
     },
@@ -177,8 +218,22 @@
       "isActive": false,
       "image": "/src/assets/projects/tasky.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
-      "technologies": ["Angular", "Ionic", "Express", "MongoDB", "Tailwind", "SocketIO"],
-      "highlights": ["SocialMedia", "SharePhotos", "Videos", "Followers", "UserExperience", "UserEngagement"],
+      "technologies": [
+        "Angular",
+        "Ionic",
+        "Express",
+        "MongoDB",
+        "Tailwind",
+        "SocketIO"
+      ],
+      "highlights": [
+        "SocialMedia",
+        "SharePhotos",
+        "Videos",
+        "Followers",
+        "UserExperience",
+        "UserEngagement"
+      ],
       "url": null,
       "github": "https://github.com/Seba74/photoview-frontend"
     }
