@@ -144,7 +144,7 @@
     {
       "name": "Mailo",
       "isActive": true,
-      "image": "/src/assets/projects/tasky.webp",
+      "image": "/src/assets/projects/dayflow.webp",
       "description": "Mailo is an innovative automated assistant available on WhatsApp, designed to connect users with nearby drivers. Its aim is to provide a fast and secure transportation service.",
       "highlights": [
         "AutomatedAssistant",
@@ -169,7 +169,7 @@
     {
       "name": "Tasky App",
       "isActive": true,
-      "image": "/src/assets/projects/tasky.webp",
+      "image": "/src/assets/projects/dayflow.webp",
       "description": "Tasky is a task management application that allows users to create, assign, and track tasks. It is designed to streamline task management processes and improve team collaboration.",
       "technologies": [
         "Angular",
@@ -192,7 +192,7 @@
     {
       "name": "Photo View",
       "isActive": false,
-      "image": "/src/assets/projects/tasky.webp",
+      "image": "/src/assets/projects/dayflow.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
       "technologies": [
         "Angular",
@@ -216,7 +216,7 @@
     {
       "name": "Photo View",
       "isActive": false,
-      "image": "/src/assets/projects/tasky.webp",
+      "image": "/src/assets/projects/dayflow.webp",
       "description": "Photo View is a social media platform that allows users to share photos and videos with their followers. It is designed to provide a seamless user experience and promote user engagement.",
       "technologies": [
         "Angular",
